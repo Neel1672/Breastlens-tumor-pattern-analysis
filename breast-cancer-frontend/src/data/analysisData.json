@@ -1,0 +1,1621 @@
+{
+  "dataset_info": {
+    "name": "Wisconsin Diagnostic Breast Cancer (WDBC)",
+    "total_records": 569,
+    "feature_count": 30,
+    "benign_count": 357,
+    "malignant_count": 212,
+    "benign_percentage": 62.74,
+    "malignant_percentage": 37.26,
+    "train_records": 455,
+    "test_records": 114,
+    "missing_values": 0,
+    "duplicate_rows": 0
+  },
+  "features_summary": [
+    {
+      "name": "mean radius",
+      "mean": 14.1273,
+      "std": 3.524,
+      "min": 6.981,
+      "max": 28.11,
+      "benign_mean": 12.1465,
+      "malignant_mean": 17.4628
+    },
+    {
+      "name": "mean texture",
+      "mean": 19.2896,
+      "std": 4.301,
+      "min": 9.71,
+      "max": 39.28,
+      "benign_mean": 17.9148,
+      "malignant_mean": 21.6049
+    },
+    {
+      "name": "mean perimeter",
+      "mean": 91.969,
+      "std": 24.299,
+      "min": 43.79,
+      "max": 188.5,
+      "benign_mean": 78.0754,
+      "malignant_mean": 115.3654
+    },
+    {
+      "name": "mean area",
+      "mean": 654.8891,
+      "std": 351.9141,
+      "min": 143.5,
+      "max": 2501.0,
+      "benign_mean": 462.7902,
+      "malignant_mean": 978.3764
+    },
+    {
+      "name": "mean smoothness",
+      "mean": 0.0964,
+      "std": 0.0141,
+      "min": 0.0526,
+      "max": 0.1634,
+      "benign_mean": 0.0925,
+      "malignant_mean": 0.1029
+    },
+    {
+      "name": "mean compactness",
+      "mean": 0.1043,
+      "std": 0.0528,
+      "min": 0.0194,
+      "max": 0.3454,
+      "benign_mean": 0.0801,
+      "malignant_mean": 0.1452
+    },
+    {
+      "name": "mean concavity",
+      "mean": 0.0888,
+      "std": 0.0797,
+      "min": 0.0,
+      "max": 0.4268,
+      "benign_mean": 0.0461,
+      "malignant_mean": 0.1608
+    },
+    {
+      "name": "mean concave points",
+      "mean": 0.0489,
+      "std": 0.0388,
+      "min": 0.0,
+      "max": 0.2012,
+      "benign_mean": 0.0257,
+      "malignant_mean": 0.088
+    },
+    {
+      "name": "mean symmetry",
+      "mean": 0.1812,
+      "std": 0.0274,
+      "min": 0.106,
+      "max": 0.304,
+      "benign_mean": 0.1742,
+      "malignant_mean": 0.1929
+    },
+    {
+      "name": "mean fractal dimension",
+      "mean": 0.0628,
+      "std": 0.0071,
+      "min": 0.05,
+      "max": 0.0974,
+      "benign_mean": 0.0629,
+      "malignant_mean": 0.0627
+    },
+    {
+      "name": "radius error",
+      "mean": 0.4052,
+      "std": 0.2773,
+      "min": 0.1115,
+      "max": 2.873,
+      "benign_mean": 0.2841,
+      "malignant_mean": 0.6091
+    },
+    {
+      "name": "texture error",
+      "mean": 1.2169,
+      "std": 0.5516,
+      "min": 0.3602,
+      "max": 4.885,
+      "benign_mean": 1.2204,
+      "malignant_mean": 1.2109
+    },
+    {
+      "name": "perimeter error",
+      "mean": 2.8661,
+      "std": 2.0219,
+      "min": 0.757,
+      "max": 21.98,
+      "benign_mean": 2.0003,
+      "malignant_mean": 4.3239
+    },
+    {
+      "name": "area error",
+      "mean": 40.3371,
+      "std": 45.491,
+      "min": 6.802,
+      "max": 542.2,
+      "benign_mean": 21.1351,
+      "malignant_mean": 72.6724
+    },
+    {
+      "name": "smoothness error",
+      "mean": 0.007,
+      "std": 0.003,
+      "min": 0.0017,
+      "max": 0.0311,
+      "benign_mean": 0.0072,
+      "malignant_mean": 0.0068
+    },
+    {
+      "name": "compactness error",
+      "mean": 0.0255,
+      "std": 0.0179,
+      "min": 0.0023,
+      "max": 0.1354,
+      "benign_mean": 0.0214,
+      "malignant_mean": 0.0323
+    },
+    {
+      "name": "concavity error",
+      "mean": 0.0319,
+      "std": 0.0302,
+      "min": 0.0,
+      "max": 0.396,
+      "benign_mean": 0.026,
+      "malignant_mean": 0.0418
+    },
+    {
+      "name": "concave points error",
+      "mean": 0.0118,
+      "std": 0.0062,
+      "min": 0.0,
+      "max": 0.0528,
+      "benign_mean": 0.0099,
+      "malignant_mean": 0.0151
+    },
+    {
+      "name": "symmetry error",
+      "mean": 0.0205,
+      "std": 0.0083,
+      "min": 0.0079,
+      "max": 0.079,
+      "benign_mean": 0.0206,
+      "malignant_mean": 0.0205
+    },
+    {
+      "name": "fractal dimension error",
+      "mean": 0.0038,
+      "std": 0.0026,
+      "min": 0.0009,
+      "max": 0.0298,
+      "benign_mean": 0.0036,
+      "malignant_mean": 0.0041
+    },
+    {
+      "name": "worst radius",
+      "mean": 16.2692,
+      "std": 4.8332,
+      "min": 7.93,
+      "max": 36.04,
+      "benign_mean": 13.3798,
+      "malignant_mean": 21.1348
+    },
+    {
+      "name": "worst texture",
+      "mean": 25.6772,
+      "std": 6.1463,
+      "min": 12.02,
+      "max": 49.54,
+      "benign_mean": 23.5151,
+      "malignant_mean": 29.3182
+    },
+    {
+      "name": "worst perimeter",
+      "mean": 107.2612,
+      "std": 33.6025,
+      "min": 50.41,
+      "max": 251.2,
+      "benign_mean": 87.0059,
+      "malignant_mean": 141.3703
+    },
+    {
+      "name": "worst area",
+      "mean": 880.5831,
+      "std": 569.357,
+      "min": 185.2,
+      "max": 4254.0,
+      "benign_mean": 558.8994,
+      "malignant_mean": 1422.2863
+    },
+    {
+      "name": "worst smoothness",
+      "mean": 0.1324,
+      "std": 0.0228,
+      "min": 0.0712,
+      "max": 0.2226,
+      "benign_mean": 0.125,
+      "malignant_mean": 0.1448
+    },
+    {
+      "name": "worst compactness",
+      "mean": 0.2543,
+      "std": 0.1573,
+      "min": 0.0273,
+      "max": 1.058,
+      "benign_mean": 0.1827,
+      "malignant_mean": 0.3748
+    },
+    {
+      "name": "worst concavity",
+      "mean": 0.2722,
+      "std": 0.2086,
+      "min": 0.0,
+      "max": 1.252,
+      "benign_mean": 0.1662,
+      "malignant_mean": 0.4506
+    },
+    {
+      "name": "worst concave points",
+      "mean": 0.1146,
+      "std": 0.0657,
+      "min": 0.0,
+      "max": 0.291,
+      "benign_mean": 0.0744,
+      "malignant_mean": 0.1822
+    },
+    {
+      "name": "worst symmetry",
+      "mean": 0.2901,
+      "std": 0.0619,
+      "min": 0.1565,
+      "max": 0.6638,
+      "benign_mean": 0.2702,
+      "malignant_mean": 0.3235
+    },
+    {
+      "name": "worst fractal dimension",
+      "mean": 0.0839,
+      "std": 0.0181,
+      "min": 0.055,
+      "max": 0.2075,
+      "benign_mean": 0.0794,
+      "malignant_mean": 0.0915
+    }
+  ],
+  "feature_rankings": [
+    {
+      "feature": "worst concave points",
+      "correlation": -0.7936,
+      "abs_correlation": 0.7936
+    },
+    {
+      "feature": "worst perimeter",
+      "correlation": -0.7829,
+      "abs_correlation": 0.7829
+    },
+    {
+      "feature": "mean concave points",
+      "correlation": -0.7766,
+      "abs_correlation": 0.7766
+    },
+    {
+      "feature": "worst radius",
+      "correlation": -0.7765,
+      "abs_correlation": 0.7765
+    },
+    {
+      "feature": "mean perimeter",
+      "correlation": -0.7426,
+      "abs_correlation": 0.7426
+    },
+    {
+      "feature": "worst area",
+      "correlation": -0.7338,
+      "abs_correlation": 0.7338
+    },
+    {
+      "feature": "mean radius",
+      "correlation": -0.73,
+      "abs_correlation": 0.73
+    },
+    {
+      "feature": "mean area",
+      "correlation": -0.709,
+      "abs_correlation": 0.709
+    },
+    {
+      "feature": "mean concavity",
+      "correlation": -0.6964,
+      "abs_correlation": 0.6964
+    },
+    {
+      "feature": "worst concavity",
+      "correlation": -0.6596,
+      "abs_correlation": 0.6596
+    }
+  ],
+  "correlation_matrix": [
+    {
+      "feature": "mean radius",
+      "mean radius": 1.0,
+      "mean perimeter": 0.9979,
+      "mean area": 0.9874,
+      "mean smoothness": 0.1706,
+      "mean concavity": 0.6768,
+      "mean concave points": 0.8225,
+      "diagnosis": -0.73
+    },
+    {
+      "feature": "mean perimeter",
+      "mean radius": 0.9979,
+      "mean perimeter": 1.0,
+      "mean area": 0.9865,
+      "mean smoothness": 0.2073,
+      "mean concavity": 0.7161,
+      "mean concave points": 0.851,
+      "diagnosis": -0.7426
+    },
+    {
+      "feature": "mean area",
+      "mean radius": 0.9874,
+      "mean perimeter": 0.9865,
+      "mean area": 1.0,
+      "mean smoothness": 0.177,
+      "mean concavity": 0.686,
+      "mean concave points": 0.8233,
+      "diagnosis": -0.709
+    },
+    {
+      "feature": "mean smoothness",
+      "mean radius": 0.1706,
+      "mean perimeter": 0.2073,
+      "mean area": 0.177,
+      "mean smoothness": 1.0,
+      "mean concavity": 0.522,
+      "mean concave points": 0.5537,
+      "diagnosis": -0.3586
+    },
+    {
+      "feature": "mean concavity",
+      "mean radius": 0.6768,
+      "mean perimeter": 0.7161,
+      "mean area": 0.686,
+      "mean smoothness": 0.522,
+      "mean concavity": 1.0,
+      "mean concave points": 0.9214,
+      "diagnosis": -0.6964
+    },
+    {
+      "feature": "mean concave points",
+      "mean radius": 0.8225,
+      "mean perimeter": 0.851,
+      "mean area": 0.8233,
+      "mean smoothness": 0.5537,
+      "mean concavity": 0.9214,
+      "mean concave points": 1.0,
+      "diagnosis": -0.7766
+    },
+    {
+      "feature": "diagnosis",
+      "mean radius": -0.73,
+      "mean perimeter": -0.7426,
+      "mean area": -0.709,
+      "mean smoothness": -0.3586,
+      "mean concavity": -0.6964,
+      "mean concave points": -0.7766,
+      "diagnosis": 1.0
+    }
+  ],
+  "model_evaluations": {
+    "Logistic Regression": {
+      "accuracy": 0.9825,
+      "malignant_precision": 0.9762,
+      "malignant_recall": 0.9762,
+      "malignant_f1": 0.9762,
+      "malignant_roc_auc": 0.9954,
+      "confusion_matrix": {
+        "matrix": [
+          [
+            41,
+            1
+          ],
+          [
+            1,
+            71
+          ]
+        ],
+        "labels": [
+          "Malignant",
+          "Benign"
+        ],
+        "true_malignant": 41,
+        "false_benign": 1,
+        "false_malignant": 1,
+        "true_benign": 71
+      }
+    },
+    "Decision Tree": {
+      "accuracy": 0.9123,
+      "malignant_precision": 0.8478,
+      "malignant_recall": 0.9286,
+      "malignant_f1": 0.8864,
+      "malignant_roc_auc": 0.9157,
+      "confusion_matrix": {
+        "matrix": [
+          [
+            39,
+            3
+          ],
+          [
+            7,
+            65
+          ]
+        ],
+        "labels": [
+          "Malignant",
+          "Benign"
+        ],
+        "true_malignant": 39,
+        "false_benign": 3,
+        "false_malignant": 7,
+        "true_benign": 65
+      }
+    },
+    "Random Forest": {
+      "accuracy": 0.9561,
+      "malignant_precision": 0.9512,
+      "malignant_recall": 0.9286,
+      "malignant_f1": 0.9398,
+      "malignant_roc_auc": 0.9937,
+      "confusion_matrix": {
+        "matrix": [
+          [
+            39,
+            3
+          ],
+          [
+            2,
+            70
+          ]
+        ],
+        "labels": [
+          "Malignant",
+          "Benign"
+        ],
+        "true_malignant": 39,
+        "false_benign": 3,
+        "false_malignant": 2,
+        "true_benign": 70
+      }
+    }
+  },
+  "clustering": {
+    "silhouette_score": 0.3434,
+    "clusters": [
+      {
+        "id": 0,
+        "total": 375,
+        "benign": 339,
+        "malignant": 36,
+        "benign_percent": 90.4,
+        "malignant_percent": 9.6
+      },
+      {
+        "id": 1,
+        "total": 194,
+        "benign": 18,
+        "malignant": 176,
+        "benign_percent": 9.28,
+        "malignant_percent": 90.72
+      }
+    ]
+  },
+  "pca": {
+    "total_variance_explained": 63.24,
+    "pc1_variance": 44.27,
+    "pc2_variance": 18.97,
+    "sample_points": [
+      {
+        "id": 0,
+        "pc1": 9.193,
+        "pc2": 1.949,
+        "diagnosis": "Malignant",
+        "cluster": 1
+      },
+      {
+        "id": 4,
+        "pc1": 3.935,
+        "pc2": -1.948,
+        "diagnosis": "Malignant",
+        "cluster": 1
+      },
+      {
+        "id": 8,
+        "pc1": 3.175,
+        "pc2": 3.392,
+        "diagnosis": "Malignant",
+        "cluster": 1
+      },
+      {
+        "id": 12,
+        "pc1": 8.185,
+        "pc2": 2.701,
+        "diagnosis": "Malignant",
+        "cluster": 1
+      },
+      {
+        "id": 16,
+        "pc1": 0.23,
+        "pc2": -1.565,
+        "diagnosis": "Malignant",
+        "cluster": 0
+      },
+      {
+        "id": 20,
+        "pc1": -1.578,
+        "pc2": 0.573,
+        "diagnosis": "Benign",
+        "cluster": 0
+      },
+      {
+        "id": 24,
+        "pc1": 4.95,
+        "pc2": -1.544,
+        "diagnosis": "Malignant",
+        "cluster": 1
+      },
+      {
+        "id": 28,
+        "pc1": 4.007,
+        "pc2": 0.537,
+        "diagnosis": "Malignant",
+        "cluster": 1
+      },
+      {
+        "id": 32,
+        "pc1": 4.555,
+        "pc2": 0.338,
+        "diagnosis": "Malignant",
+        "cluster": 1
+      },
+      {
+        "id": 36,
+        "pc1": 1.296,
+        "pc2": 0.913,
+        "diagnosis": "Malignant",
+        "cluster": 1
+      },
+      {
+        "id": 40,
+        "pc1": -2.151,
+        "pc2": -1.924,
+        "diagnosis": "Malignant",
+        "cluster": 0
+      },
+      {
+        "id": 44,
+        "pc1": -0.294,
+        "pc2": -0.137,
+        "diagnosis": "Malignant",
+        "cluster": 0
+      },
+      {
+        "id": 48,
+        "pc1": -2.136,
+        "pc2": 0.096,
+        "diagnosis": "Benign",
+        "cluster": 0
+      },
+      {
+        "id": 52,
+        "pc1": -3.45,
+        "pc2": -0.498,
+        "diagnosis": "Benign",
+        "cluster": 0
+      },
+      {
+        "id": 56,
+        "pc1": 4.649,
+        "pc2": -2.31,
+        "diagnosis": "Malignant",
+        "cluster": 1
+      },
+      {
+        "id": 60,
+        "pc1": -2.386,
+        "pc2": 2.758,
+        "diagnosis": "Benign",
+        "cluster": 0
+      },
+      {
+        "id": 64,
+        "pc1": 1.692,
+        "pc2": 1.541,
+        "diagnosis": "Malignant",
+        "cluster": 1
+      },
+      {
+        "id": 68,
+        "pc1": 4.33,
+        "pc2": 9.203,
+        "diagnosis": "Benign",
+        "cluster": 1
+      },
+      {
+        "id": 72,
+        "pc1": 5.504,
+        "pc2": 0.938,
+        "diagnosis": "Malignant",
+        "cluster": 1
+      },
+      {
+        "id": 76,
+        "pc1": -0.835,
+        "pc2": 1.966,
+        "diagnosis": "Benign",
+        "cluster": 0
+      },
+      {
+        "id": 80,
+        "pc1": -1.638,
+        "pc2": 1.716,
+        "diagnosis": "Benign",
+        "cluster": 0
+      },
+      {
+        "id": 84,
+        "pc1": -2.174,
+        "pc2": 0.497,
+        "diagnosis": "Benign",
+        "cluster": 0
+      },
+      {
+        "id": 88,
+        "pc1": -0.934,
+        "pc2": 0.928,
+        "diagnosis": "Benign",
+        "cluster": 0
+      },
+      {
+        "id": 92,
+        "pc1": -2.847,
+        "pc2": -2.894,
+        "diagnosis": "Benign",
+        "cluster": 0
+      },
+      {
+        "id": 96,
+        "pc1": -2.592,
+        "pc2": 0.214,
+        "diagnosis": "Benign",
+        "cluster": 0
+      },
+      {
+        "id": 100,
+        "pc1": -0.433,
+        "pc2": -1.392,
+        "diagnosis": "Malignant",
+        "cluster": 0
+      },
+      {
+        "id": 104,
+        "pc1": -2.691,
+        "pc2": 1.42,
+        "diagnosis": "Benign",
+        "cluster": 0
+      },
+      {
+        "id": 108,
+        "pc1": 13.056,
+        "pc2": 0.982,
+        "diagnosis": "Malignant",
+        "cluster": 1
+      },
+      {
+        "id": 112,
+        "pc1": 3.591,
+        "pc2": 3.926,
+        "diagnosis": "Benign",
+        "cluster": 1
+      },
+      {
+        "id": 116,
+        "pc1": -2.097,
+        "pc2": 3.667,
+        "diagnosis": "Benign",
+        "cluster": 0
+      },
+      {
+        "id": 120,
+        "pc1": -2.966,
+        "pc2": 0.372,
+        "diagnosis": "Benign",
+        "cluster": 0
+      },
+      {
+        "id": 124,
+        "pc1": -2.203,
+        "pc2": -0.736,
+        "diagnosis": "Benign",
+        "cluster": 0
+      },
+      {
+        "id": 128,
+        "pc1": 1.409,
+        "pc2": 1.305,
+        "diagnosis": "Benign",
+        "cluster": 1
+      },
+      {
+        "id": 132,
+        "pc1": 1.353,
+        "pc2": -1.154,
+        "diagnosis": "Malignant",
+        "cluster": 1
+      },
+      {
+        "id": 136,
+        "pc1": -2.601,
+        "pc2": -0.482,
+        "diagnosis": "Benign",
+        "cluster": 0
+      },
+      {
+        "id": 140,
+        "pc1": -5.015,
+        "pc2": 0.575,
+        "diagnosis": "Benign",
+        "cluster": 0
+      },
+      {
+        "id": 144,
+        "pc1": -4.346,
+        "pc2": -0.894,
+        "diagnosis": "Benign",
+        "cluster": 0
+      },
+      {
+        "id": 148,
+        "pc1": -0.412,
+        "pc2": -0.39,
+        "diagnosis": "Benign",
+        "cluster": 0
+      },
+      {
+        "id": 152,
+        "pc1": 7.093,
+        "pc2": 12.573,
+        "diagnosis": "Benign",
+        "cluster": 1
+      },
+      {
+        "id": 156,
+        "pc1": 4.101,
+        "pc2": -0.379,
+        "diagnosis": "Malignant",
+        "cluster": 1
+      },
+      {
+        "id": 160,
+        "pc1": -0.598,
+        "pc2": 1.786,
+        "diagnosis": "Benign",
+        "cluster": 0
+      },
+      {
+        "id": 164,
+        "pc1": 5.494,
+        "pc2": -4.166,
+        "diagnosis": "Malignant",
+        "cluster": 1
+      },
+      {
+        "id": 168,
+        "pc1": 5.07,
+        "pc2": -1.785,
+        "diagnosis": "Malignant",
+        "cluster": 1
+      },
+      {
+        "id": 172,
+        "pc1": 2.819,
+        "pc2": 1.265,
+        "diagnosis": "Malignant",
+        "cluster": 1
+      },
+      {
+        "id": 176,
+        "pc1": 1.171,
+        "pc2": 7.014,
+        "diagnosis": "Benign",
+        "cluster": 1
+      },
+      {
+        "id": 180,
+        "pc1": 9.513,
+        "pc2": -5.603,
+        "diagnosis": "Malignant",
+        "cluster": 1
+      },
+      {
+        "id": 184,
+        "pc1": -0.39,
+        "pc2": -0.989,
+        "diagnosis": "Malignant",
+        "cluster": 0
+      },
+      {
+        "id": 188,
+        "pc1": -3.31,
+        "pc2": 0.156,
+        "diagnosis": "Benign",
+        "cluster": 0
+      },
+      {
+        "id": 192,
+        "pc1": -5.566,
+        "pc2": -0.478,
+        "diagnosis": "Benign",
+        "cluster": 0
+      },
+      {
+        "id": 196,
+        "pc1": 2.498,
+        "pc2": 2.278,
+        "diagnosis": "Malignant",
+        "cluster": 1
+      },
+      {
+        "id": 200,
+        "pc1": -1.473,
+        "pc2": 0.117,
+        "diagnosis": "Benign",
+        "cluster": 0
+      },
+      {
+        "id": 204,
+        "pc1": -0.781,
+        "pc2": 0.653,
+        "diagnosis": "Benign",
+        "cluster": 0
+      },
+      {
+        "id": 208,
+        "pc1": 0.314,
+        "pc2": 2.078,
+        "diagnosis": "Benign",
+        "cluster": 0
+      },
+      {
+        "id": 212,
+        "pc1": 12.285,
+        "pc2": -7.543,
+        "diagnosis": "Malignant",
+        "cluster": 1
+      },
+      {
+        "id": 216,
+        "pc1": -0.389,
+        "pc2": 2.277,
+        "diagnosis": "Benign",
+        "cluster": 0
+      },
+      {
+        "id": 220,
+        "pc1": -2.374,
+        "pc2": -0.733,
+        "diagnosis": "Benign",
+        "cluster": 0
+      },
+      {
+        "id": 224,
+        "pc1": -2.478,
+        "pc2": -1.419,
+        "diagnosis": "Benign",
+        "cluster": 0
+      },
+      {
+        "id": 228,
+        "pc1": -1.457,
+        "pc2": -0.202,
+        "diagnosis": "Benign",
+        "cluster": 0
+      },
+      {
+        "id": 232,
+        "pc1": -3.676,
+        "pc2": -1.292,
+        "diagnosis": "Benign",
+        "cluster": 0
+      },
+      {
+        "id": 236,
+        "pc1": 8.404,
+        "pc2": -4.154,
+        "diagnosis": "Malignant",
+        "cluster": 1
+      },
+      {
+        "id": 240,
+        "pc1": -2.228,
+        "pc2": -1.215,
+        "diagnosis": "Benign",
+        "cluster": 0
+      },
+      {
+        "id": 244,
+        "pc1": 3.796,
+        "pc2": -1.026,
+        "diagnosis": "Malignant",
+        "cluster": 1
+      },
+      {
+        "id": 248,
+        "pc1": -2.583,
+        "pc2": 0.729,
+        "diagnosis": "Benign",
+        "cluster": 0
+      },
+      {
+        "id": 252,
+        "pc1": 7.085,
+        "pc2": 0.528,
+        "diagnosis": "Malignant",
+        "cluster": 1
+      },
+      {
+        "id": 256,
+        "pc1": 6.393,
+        "pc2": -1.823,
+        "diagnosis": "Malignant",
+        "cluster": 1
+      },
+      {
+        "id": 260,
+        "pc1": 3.378,
+        "pc2": -3.371,
+        "diagnosis": "Malignant",
+        "cluster": 1
+      },
+      {
+        "id": 264,
+        "pc1": 1.615,
+        "pc2": -2.475,
+        "diagnosis": "Malignant",
+        "cluster": 1
+      },
+      {
+        "id": 268,
+        "pc1": -2.284,
+        "pc2": 0.009,
+        "diagnosis": "Benign",
+        "cluster": 0
+      },
+      {
+        "id": 272,
+        "pc1": 7.676,
+        "pc2": -3.075,
+        "diagnosis": "Malignant",
+        "cluster": 1
+      },
+      {
+        "id": 276,
+        "pc1": -4.346,
+        "pc2": -0.322,
+        "diagnosis": "Benign",
+        "cluster": 0
+      },
+      {
+        "id": 280,
+        "pc1": 4.96,
+        "pc2": -1.341,
+        "diagnosis": "Malignant",
+        "cluster": 1
+      },
+      {
+        "id": 284,
+        "pc1": -1.373,
+        "pc2": 0.006,
+        "diagnosis": "Benign",
+        "cluster": 0
+      },
+      {
+        "id": 288,
+        "pc1": 0.403,
+        "pc2": 3.723,
+        "diagnosis": "Benign",
+        "cluster": 0
+      },
+      {
+        "id": 292,
+        "pc1": -1.42,
+        "pc2": 1.394,
+        "diagnosis": "Benign",
+        "cluster": 0
+      },
+      {
+        "id": 296,
+        "pc1": -4.77,
+        "pc2": -0.543,
+        "diagnosis": "Benign",
+        "cluster": 0
+      },
+      {
+        "id": 300,
+        "pc1": 6.59,
+        "pc2": -1.485,
+        "diagnosis": "Malignant",
+        "cluster": 1
+      },
+      {
+        "id": 304,
+        "pc1": -3.057,
+        "pc2": -0.179,
+        "diagnosis": "Benign",
+        "cluster": 0
+      },
+      {
+        "id": 308,
+        "pc1": -4.658,
+        "pc2": -3.065,
+        "diagnosis": "Benign",
+        "cluster": 0
+      },
+      {
+        "id": 312,
+        "pc1": -2.136,
+        "pc2": -0.004,
+        "diagnosis": "Benign",
+        "cluster": 0
+      },
+      {
+        "id": 316,
+        "pc1": -4.747,
+        "pc2": -1.798,
+        "diagnosis": "Benign",
+        "cluster": 0
+      },
+      {
+        "id": 320,
+        "pc1": -1.295,
+        "pc2": 3.471,
+        "diagnosis": "Benign",
+        "cluster": 0
+      },
+      {
+        "id": 324,
+        "pc1": -3.146,
+        "pc2": -0.743,
+        "diagnosis": "Benign",
+        "cluster": 0
+      },
+      {
+        "id": 328,
+        "pc1": 2.251,
+        "pc2": -0.349,
+        "diagnosis": "Malignant",
+        "cluster": 1
+      },
+      {
+        "id": 332,
+        "pc1": -3.214,
+        "pc2": 1.103,
+        "diagnosis": "Benign",
+        "cluster": 0
+      },
+      {
+        "id": 336,
+        "pc1": -2.393,
+        "pc2": 0.99,
+        "diagnosis": "Benign",
+        "cluster": 0
+      },
+      {
+        "id": 340,
+        "pc1": 0.295,
+        "pc2": 0.227,
+        "diagnosis": "Benign",
+        "cluster": 0
+      },
+      {
+        "id": 344,
+        "pc1": -2.177,
+        "pc2": 0.959,
+        "diagnosis": "Benign",
+        "cluster": 0
+      },
+      {
+        "id": 348,
+        "pc1": -3.326,
+        "pc2": 0.475,
+        "diagnosis": "Benign",
+        "cluster": 0
+      },
+      {
+        "id": 352,
+        "pc1": 10.934,
+        "pc2": -3.703,
+        "diagnosis": "Malignant",
+        "cluster": 1
+      },
+      {
+        "id": 356,
+        "pc1": 0.358,
+        "pc2": 2.128,
+        "diagnosis": "Benign",
+        "cluster": 0
+      },
+      {
+        "id": 360,
+        "pc1": -4.592,
+        "pc2": -2.761,
+        "diagnosis": "Benign",
+        "cluster": 0
+      },
+      {
+        "id": 364,
+        "pc1": -3.14,
+        "pc2": -1.488,
+        "diagnosis": "Benign",
+        "cluster": 0
+      },
+      {
+        "id": 368,
+        "pc1": 5.307,
+        "pc2": -6.723,
+        "diagnosis": "Malignant",
+        "cluster": 1
+      },
+      {
+        "id": 372,
+        "pc1": 3.635,
+        "pc2": -1.956,
+        "diagnosis": "Malignant",
+        "cluster": 1
+      },
+      {
+        "id": 376,
+        "pc1": 2.045,
+        "pc2": 6.427,
+        "diagnosis": "Benign",
+        "cluster": 1
+      },
+      {
+        "id": 380,
+        "pc1": -0.926,
+        "pc2": 2.302,
+        "diagnosis": "Benign",
+        "cluster": 0
+      },
+      {
+        "id": 384,
+        "pc1": -2.301,
+        "pc2": -0.932,
+        "diagnosis": "Benign",
+        "cluster": 0
+      },
+      {
+        "id": 388,
+        "pc1": -0.472,
+        "pc2": 3.703,
+        "diagnosis": "Benign",
+        "cluster": 0
+      },
+      {
+        "id": 392,
+        "pc1": 4.149,
+        "pc2": 0.767,
+        "diagnosis": "Malignant",
+        "cluster": 1
+      },
+      {
+        "id": 396,
+        "pc1": -0.501,
+        "pc2": 0.107,
+        "diagnosis": "Benign",
+        "cluster": 0
+      },
+      {
+        "id": 400,
+        "pc1": 6.29,
+        "pc2": 2.037,
+        "diagnosis": "Malignant",
+        "cluster": 1
+      },
+      {
+        "id": 404,
+        "pc1": -3.647,
+        "pc2": -1.241,
+        "diagnosis": "Benign",
+        "cluster": 0
+      },
+      {
+        "id": 408,
+        "pc1": 2.763,
+        "pc2": -1.079,
+        "diagnosis": "Malignant",
+        "cluster": 1
+      },
+      {
+        "id": 412,
+        "pc1": -3.996,
+        "pc2": 0.96,
+        "diagnosis": "Benign",
+        "cluster": 0
+      },
+      {
+        "id": 416,
+        "pc1": -2.622,
+        "pc2": 2.502,
+        "diagnosis": "Benign",
+        "cluster": 0
+      },
+      {
+        "id": 420,
+        "pc1": -2.015,
+        "pc2": 0.778,
+        "diagnosis": "Benign",
+        "cluster": 0
+      },
+      {
+        "id": 424,
+        "pc1": -1.849,
+        "pc2": 2.541,
+        "diagnosis": "Benign",
+        "cluster": 0
+      },
+      {
+        "id": 428,
+        "pc1": -4.659,
+        "pc2": -0.782,
+        "diagnosis": "Benign",
+        "cluster": 0
+      },
+      {
+        "id": 432,
+        "pc1": 4.549,
+        "pc2": -0.816,
+        "diagnosis": "Malignant",
+        "cluster": 1
+      },
+      {
+        "id": 436,
+        "pc1": -2.241,
+        "pc2": -0.455,
+        "diagnosis": "Benign",
+        "cluster": 0
+      },
+      {
+        "id": 440,
+        "pc1": -0.307,
+        "pc2": 2.185,
+        "diagnosis": "Benign",
+        "cluster": 0
+      },
+      {
+        "id": 444,
+        "pc1": 0.982,
+        "pc2": -2.21,
+        "diagnosis": "Malignant",
+        "cluster": 0
+      },
+      {
+        "id": 448,
+        "pc1": -1.249,
+        "pc2": -1.589,
+        "diagnosis": "Benign",
+        "cluster": 0
+      },
+      {
+        "id": 452,
+        "pc1": -2.217,
+        "pc2": 0.03,
+        "diagnosis": "Benign",
+        "cluster": 0
+      },
+      {
+        "id": 456,
+        "pc1": -1.329,
+        "pc2": 0.777,
+        "diagnosis": "Benign",
+        "cluster": 0
+      },
+      {
+        "id": 460,
+        "pc1": 3.475,
+        "pc2": -1.673,
+        "diagnosis": "Malignant",
+        "cluster": 1
+      },
+      {
+        "id": 464,
+        "pc1": -2.757,
+        "pc2": -1.794,
+        "diagnosis": "Benign",
+        "cluster": 0
+      },
+      {
+        "id": 468,
+        "pc1": 5.931,
+        "pc2": 1.228,
+        "diagnosis": "Malignant",
+        "cluster": 1
+      },
+      {
+        "id": 472,
+        "pc1": -1.399,
+        "pc2": -1.772,
+        "diagnosis": "Benign",
+        "cluster": 0
+      },
+      {
+        "id": 476,
+        "pc1": -0.521,
+        "pc2": -0.973,
+        "diagnosis": "Benign",
+        "cluster": 0
+      },
+      {
+        "id": 480,
+        "pc1": -2.985,
+        "pc2": -0.673,
+        "diagnosis": "Benign",
+        "cluster": 0
+      },
+      {
+        "id": 484,
+        "pc1": -0.056,
+        "pc2": -0.227,
+        "diagnosis": "Benign",
+        "cluster": 0
+      },
+      {
+        "id": 488,
+        "pc1": -1.726,
+        "pc2": 0.998,
+        "diagnosis": "Benign",
+        "cluster": 0
+      },
+      {
+        "id": 492,
+        "pc1": 3.104,
+        "pc2": -1.236,
+        "diagnosis": "Malignant",
+        "cluster": 1
+      },
+      {
+        "id": 496,
+        "pc1": -0.229,
+        "pc2": 1.516,
+        "diagnosis": "Benign",
+        "cluster": 0
+      },
+      {
+        "id": 500,
+        "pc1": -0.601,
+        "pc2": -0.838,
+        "diagnosis": "Benign",
+        "cluster": 0
+      },
+      {
+        "id": 504,
+        "pc1": 1.299,
+        "pc2": 7.73,
+        "diagnosis": "Benign",
+        "cluster": 1
+      },
+      {
+        "id": 508,
+        "pc1": -1.167,
+        "pc2": -1.666,
+        "diagnosis": "Benign",
+        "cluster": 0
+      },
+      {
+        "id": 512,
+        "pc1": 2.227,
+        "pc2": 1.942,
+        "diagnosis": "Malignant",
+        "cluster": 1
+      },
+      {
+        "id": 516,
+        "pc1": 2.697,
+        "pc2": -1.944,
+        "diagnosis": "Malignant",
+        "cluster": 1
+      },
+      {
+        "id": 520,
+        "pc1": -1.293,
+        "pc2": 4.964,
+        "diagnosis": "Benign",
+        "cluster": 0
+      },
+      {
+        "id": 524,
+        "pc1": -3.252,
+        "pc2": 1.286,
+        "diagnosis": "Benign",
+        "cluster": 0
+      },
+      {
+        "id": 528,
+        "pc1": 0.347,
+        "pc2": 1.541,
+        "diagnosis": "Benign",
+        "cluster": 0
+      },
+      {
+        "id": 532,
+        "pc1": -2.68,
+        "pc2": -1.485,
+        "diagnosis": "Benign",
+        "cluster": 0
+      },
+      {
+        "id": 536,
+        "pc1": 0.536,
+        "pc2": 0.381,
+        "diagnosis": "Malignant",
+        "cluster": 0
+      },
+      {
+        "id": 540,
+        "pc1": -1.665,
+        "pc2": 2.39,
+        "diagnosis": "Benign",
+        "cluster": 0
+      },
+      {
+        "id": 544,
+        "pc1": -1.666,
+        "pc2": -0.214,
+        "diagnosis": "Benign",
+        "cluster": 0
+      },
+      {
+        "id": 548,
+        "pc1": -3.836,
+        "pc2": 0.496,
+        "diagnosis": "Benign",
+        "cluster": 0
+      },
+      {
+        "id": 552,
+        "pc1": -2.896,
+        "pc2": -1.452,
+        "diagnosis": "Benign",
+        "cluster": 0
+      },
+      {
+        "id": 556,
+        "pc1": -3.877,
+        "pc2": 1.084,
+        "diagnosis": "Benign",
+        "cluster": 0
+      },
+      {
+        "id": 560,
+        "pc1": -0.482,
+        "pc2": -0.178,
+        "diagnosis": "Benign",
+        "cluster": 0
+      },
+      {
+        "id": 564,
+        "pc1": 6.439,
+        "pc2": -3.577,
+        "diagnosis": "Malignant",
+        "cluster": 1
+      },
+      {
+        "id": 568,
+        "pc1": -5.475,
+        "pc2": -0.671,
+        "diagnosis": "Benign",
+        "cluster": 0
+      }
+    ]
+  },
+  "presets": {
+    "malignant_sample": {
+      "mean radius": 19.55,
+      "mean texture": 28.77,
+      "mean perimeter": 133.6,
+      "mean area": 1207.0,
+      "mean smoothness": 0.0926,
+      "mean compactness": 0.2063,
+      "mean concavity": 0.1784,
+      "mean concave points": 0.1144,
+      "mean symmetry": 0.1893,
+      "mean fractal dimension": 0.0623,
+      "radius error": 0.8426,
+      "texture error": 1.199,
+      "perimeter error": 7.158,
+      "area error": 106.4,
+      "smoothness error": 0.0064,
+      "compactness error": 0.0476,
+      "concavity error": 0.0386,
+      "concave points error": 0.0152,
+      "symmetry error": 0.0194,
+      "fractal dimension error": 0.0053,
+      "worst radius": 25.05,
+      "worst texture": 36.27,
+      "worst perimeter": 178.6,
+      "worst area": 1926.0,
+      "worst smoothness": 0.1281,
+      "worst compactness": 0.5329,
+      "worst concavity": 0.4251,
+      "worst concave points": 0.1941,
+      "worst symmetry": 0.2818,
+      "worst fractal dimension": 0.1005
+    },
+    "benign_sample": {
+      "mean radius": 11.13,
+      "mean texture": 16.62,
+      "mean perimeter": 70.47,
+      "mean area": 381.1,
+      "mean smoothness": 0.0815,
+      "mean compactness": 0.0383,
+      "mean concavity": 0.0137,
+      "mean concave points": 0.0137,
+      "mean symmetry": 0.1511,
+      "mean fractal dimension": 0.0615,
+      "radius error": 0.1415,
+      "texture error": 0.9671,
+      "perimeter error": 0.968,
+      "area error": 9.704,
+      "smoothness error": 0.0059,
+      "compactness error": 0.0063,
+      "concavity error": 0.0094,
+      "concave points error": 0.0062,
+      "symmetry error": 0.0201,
+      "fractal dimension error": 0.0024,
+      "worst radius": 11.68,
+      "worst texture": 20.29,
+      "worst perimeter": 74.35,
+      "worst area": 421.1,
+      "worst smoothness": 0.103,
+      "worst compactness": 0.0622,
+      "worst concavity": 0.0458,
+      "worst concave points": 0.0404,
+      "worst symmetry": 0.2383,
+      "worst fractal dimension": 0.0708
+    },
+    "average_sample": {
+      "mean radius": 14.1273,
+      "mean texture": 19.2896,
+      "mean perimeter": 91.969,
+      "mean area": 654.8891,
+      "mean smoothness": 0.0964,
+      "mean compactness": 0.1043,
+      "mean concavity": 0.0888,
+      "mean concave points": 0.0489,
+      "mean symmetry": 0.1812,
+      "mean fractal dimension": 0.0628,
+      "radius error": 0.4052,
+      "texture error": 1.2169,
+      "perimeter error": 2.8661,
+      "area error": 40.3371,
+      "smoothness error": 0.007,
+      "compactness error": 0.0255,
+      "concavity error": 0.0319,
+      "concave points error": 0.0118,
+      "symmetry error": 0.0205,
+      "fractal dimension error": 0.0038,
+      "worst radius": 16.2692,
+      "worst texture": 25.6772,
+      "worst perimeter": 107.2612,
+      "worst area": 880.5831,
+      "worst smoothness": 0.1324,
+      "worst compactness": 0.2543,
+      "worst concavity": 0.2722,
+      "worst concave points": 0.1146,
+      "worst symmetry": 0.2901,
+      "worst fractal dimension": 0.0839
+    }
+  }
+}
